@@ -30,7 +30,7 @@ const cardsOffersInfo = [
 export default function Offers () {
   return (
     <section style={{ background: 'linear-gradient(172deg, #1a2833 0%, #172e36 100%)' }} className="md:py-18 flex flex-col items-center gap-8 py-12">
-      <h2 className="text-center text-[32px] font-semibold text-white">
+      <h2 className="text-center text-primary-500 text-[32px] font-semibold">
         En cápsula ofrecemos
       </h2>
       <div
