@@ -17,6 +17,7 @@ export default function RootLayout ({
   return (
     <html lang="es">
       <link rel="shortcut icon" href="logo.svg" type="image/x-icon" />
+      <link rel="prefetch" href="https://i.imgur.com" />
       <body className={inter.className}>{children}</body>
     </html>
   )
