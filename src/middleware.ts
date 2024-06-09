@@ -9,6 +9,9 @@ export default auth((req) => {
   if (req.nextUrl.pathname === '/') {
     if (req.auth) return Response.redirect(new URL('/aula', req.nextUrl.origin))
   }
+  if (req.nextUrl.pathname === '/signin') {
+    if (req.auth) return Response.redirect(new URL('/aula', req.nextUrl.origin))
+  }
 })
 
 export const config = {
