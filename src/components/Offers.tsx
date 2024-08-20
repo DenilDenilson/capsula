@@ -7,7 +7,7 @@ const cardsOffersInfo = [
   {
     imagesrc: OnLiveImage,
     altText: 'On live image',
-    title: 'Clases gravadas y en vivo',
+    title: 'Clases grabadas y en vivo',
     description:
       'En cápsula electrónica tenemos inicios de cursos, donde estos son grabados y subidos a la plataforma para su posterior consulta. Esto permite obtener lo mejor de ambos métodos; interacción directa con el profesor y acceso al contenido en todo momento.'
   },

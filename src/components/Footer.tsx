@@ -2,6 +2,7 @@ import Image from 'next/image'
 import IconFb from '@public/svg/IconFb.svg'
 import IconTt from '@public/svg/IconTt.svg'
 import LogoFooter from '@public/svg/LogoFooter.svg'
+import { chatLink } from '@/utils/links'
 
 const navOptions = [
   {
@@ -10,11 +11,11 @@ const navOptions = [
   },
   {
     name: 'Próximos inicios',
-    url: '/proximos-inicios'
+    url: '#'
   },
   {
     name: 'Chatea con nosotros',
-    url: 'https://wa.me/+51957686407'
+    url: chatLink
   }
 ]
 
@@ -32,7 +33,7 @@ export default function Footer () {
         <ul className="start flex flex-col gap-4">
           {
             navOptions.map((link, index) => (
-              <a key={index} className="text-center text-sm hover:underline text-[#EFEFEF]" href={link.url}>
+              <a key={index} target='_blank' className="text-center text-sm hover:underline text-[#EFEFEF]" href={link.url}>
                 {link.name}
               </a>
             ))

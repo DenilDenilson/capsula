@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import ContactPerson from '@public/svg/ConctactPerson.svg'
 import IconWsp from '@public/svg/IconWsp.svg'
+import { chatLink } from '@/utils/links'
 
 export default function Contacme () {
   return (
@@ -14,10 +15,10 @@ export default function Contacme () {
         </p>
       </div>
       <a
-        href="https://wa.me/+51957686407"
+        href={chatLink}
         target="_blank"
         rel='noreferrer noopener'
-        className="flex h-8 w-64 bg-black place-content-center items-center gap-2 rounded border-[1px] border-white p-2 text-center text-base text-white hover:bg-primary-900"
+        className="flex h-12 w-80 bg-[#25D366] place-content-center items-center gap-2 rounded-xl border-[1px] border-white text-center text-xl text-white hover:bg-[#075e54]"
       >
         <Image src={IconWsp} alt="Whatsapp Icon for chat" />
         ¿Qué cursos puedo tomar?
